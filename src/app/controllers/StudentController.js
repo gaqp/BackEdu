@@ -38,9 +38,9 @@ class StudentController {
 	      return res.json({ students, count });
       }
       
-	    const students = await Student.findAll({
+	   /* const students = await Student.findAll({
 	      order: ['id'],
-	    });
+	    });*/
 
 	    return res.json(students);
     } catch (err) {
