@@ -43,8 +43,8 @@ const logout = require('./app/controllers/passport')
 
 routes.post('/signin', passport.authenticate('local-signin', {
     //TODO mudar esses redirects para o front end
-    successRedirect: 'http://localhost:3001/',
-    failureRedirect: 'http://localhost:3001/login'
+    successRedirect: 'https://gaqp.github.io/WebEdu/#/app',
+    failureRedirect: 'https://gaqp.github.io/WebEdu/#/login'
 }));
 routes.get('/logout', logout.logout)
 
