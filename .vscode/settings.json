@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/890a2e30-eb80-467d-a874-1c2c51b33b81/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/BackEdu",
+    "appService.deploySubpath": "."
+}
