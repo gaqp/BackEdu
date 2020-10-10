@@ -12,7 +12,11 @@ module.exports = {
       allowNull: false,
       type: Sequelize.STRING,
     },
-    deadline: {
+    data_inicial:{
+      allowNull: false,
+      type: Sequelize.DATE
+    },
+    data_final:{
       allowNull: false,
       type: Sequelize.DATE
     },
