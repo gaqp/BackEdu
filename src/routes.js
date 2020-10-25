@@ -19,6 +19,7 @@ const Answers = require('./app/controllers/Answers');
 const PatrulhaZika = require('./app/controllers/PatrulhaZika');
 const TanquesJanelas = require('./app/controllers/TanquesJanelasController');
 const ColetaReciclagem = require('./app/controllers/ColetaReciclagemController');
+const BNCC = require('./app/controllers/BNCCController')
 
 
 
@@ -149,6 +150,11 @@ routes.get("/coletareciclagem/:id", ColetaReciclagem.show);
 routes.post("/coletareciclagem", ColetaReciclagem.store);
 routes.put("/coletareciclagem/:id", ColetaReciclagem.update);
 routes.delete("/coletareciclagem/:id", ColetaReciclagem.destroy);
+
+routes.get("/BNCC/", BNCC.list);
+routes.post("/BNCC", BNCC.store);
+routes.put("/BNCC/:id", BNCC.update);
+routes.delete("/BNCC/:id", BNCC.destroy);
 
 
 
